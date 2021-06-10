@@ -5,7 +5,9 @@ const Theme = {
 
   const checkBox = document.querySelector('#theme-switch-toggle')
   checkBox.addEventListener('change', onChangeInput)
-
+  const body = document.querySelector('body')
   function onChangeInput (){
-      body.classList.add('${Theme.DARK}')
+      body.classList.toggle(Theme.DARK)
+      
+
   }
